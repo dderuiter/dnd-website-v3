@@ -11,7 +11,7 @@ Run `ng serve` or `npm start` for a dev server. Navigate to `http://localhost:42
 Run `ng build --baseHref="https://davisderuiter.com"` to build the project. The build artifacts will be stored in the `dist/` directory. If you get a permission error, add `sudo` to the front of the command.
 
 ## Publish
-Run `ngh --dir=dist/dnd-website-v3` to publish to GitHub pages.
+Run `npx angular-cli-ghpages --dir=dist/dnd-website-v3` to publish to GitHub pages.
 
 ## Running unit tests
 

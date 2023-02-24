@@ -1,0 +1,15 @@
+@import "../../../variables.scss";
+
+#site-navbar {
+
+    #btn-resume {
+        padding: 5px 15px;
+        color: $accent-color !important;
+        border: 2px solid $accent-color !important;
+    }
+    
+    #btn-resume:hover {
+        background-color: $background-hover-color;
+    }
+
+}

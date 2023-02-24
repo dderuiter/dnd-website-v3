@@ -1,0 +1,69 @@
+@import "../../../../variables.scss";
+
+h5 {
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+
+    span {
+        color: $accent-color;
+    }
+}
+
+h6 {
+    color: rgb(136, 146, 176);
+    font-weight: 500;
+
+    span {
+        color: white;
+    }
+}
+
+.ul-top-level > li,
+.ul-top-level > ul {
+    margin-bottom: 8px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li::before {
+    content: "▹";
+    color: $accent-color;
+    font-weight: bold;
+    display: inline-block;
+    width: 1.2em;
+    margin-left: -1.2em;
+}
+
+.vertical-panel-line {
+    height: 100%;
+    width: 2px;
+    background: rgb(168, 178, 209);
+    margin: auto;
+}
+
+.diamond-shape {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: $accent-color;
+    height: 16px;
+    text-align: center;
+    transform: rotate(45deg);
+    width: 16px;
+}
+
+@media only screen and (max-width: 992px) {
+    .tline {
+        height: 0;
+        visibility: hidden;
+    }
+
+    .tdesc {
+        margin: 15px 0;
+    }
+}

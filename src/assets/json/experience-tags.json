@@ -1,0 +1,7 @@
+{
+    "2014": ["Access","AutoIt","PowerPoint","QuickTest Pro","Visio"],
+    "2015": ["Ant","Bootstrap","ClearCase","DOORS","Eclipse","Groovy","Java","JavaScript","SQL"],
+    "2016": ["ASP.NET MVC","C#","Crucible","JavaScript","Jira","jQuery","Kendo UI","Razor","SQL","Subversion","Visual Studio"],
+    "2017": ["Apache CXF","Artifactory","Bitbucket","Confluence","Eclipse","Git","Groovy","IntelliJ IDEA","Java","JavaScript","Jenkins","Jira","JSF","Maven","MDBootstrap","OpenAPI","PL/SQL","ProGet","SOAP","Splunk","Spring","Swagger","REST","Tomcat","WebLogic", "Webpack"],
+    "PRES": ["AWS", "Coral", "RDE"]
+}

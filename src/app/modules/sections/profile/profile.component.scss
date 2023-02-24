@@ -1,0 +1,19 @@
+@import "../../../../variables.scss";
+
+#profile {
+
+    strong {
+        color: white;
+    }
+
+    button {
+        margin-top: 20px !important;
+        color: $accent-color !important;
+        border: 2px solid $accent-color !important;
+    }
+    
+    button:hover {
+        background-color: $background-hover-color !important;
+    }
+
+}

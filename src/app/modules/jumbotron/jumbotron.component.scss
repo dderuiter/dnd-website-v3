@@ -1,0 +1,51 @@
+@import "../../../variables.scss";
+
+#jumbotron {
+    position: relative;
+    background: url("../../../assets/svg/jumbotron.svg")no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    z-index: 100;
+}
+
+.heading-container {
+    top: 15%;
+    right: 10%;
+}
+
+h1 {
+    font-weight: 500;
+    color: $title-color;
+    font-size: 3.8rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-weight: 500;
+    color: $subtitle-color;
+    font-size: 2.2rem;
+}
+
+@media (max-width: 480px) {
+    .heading-container {
+        top: 15%;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 350px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}

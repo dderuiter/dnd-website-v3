@@ -1,1 +1,72 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./variables.scss";
+
+// .navbar {
+//     background-color: transparent !important;
+// }
+
+.top-nav-collapse {
+    background-color: $background-color;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: $background-color;
+    }
+}
+
+// .text-accent-color {
+//     color: $accent-color;
+// }
+
+// .background-accent-color {
+//     background-color: $accent-color;
+// }
+
+#site-body {
+    background-color: $background-color;
+}
+
+.container {
+    color: rgb(204, 214, 246) !important;
+    letter-spacing: 0.5px !important;
+}
+
+.site-section {
+    position: relative;
+    background-color: $background-color-alt;
+    margin-top: 240px;
+    margin-bottom: 240px;
+    padding: 25px 0;
+    border-radius: 5px;
+}
+
+.section-title {
+    text-align: center;
+    color: $title-color;
+    font-size: 3.5rem !important;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: $subtitle-color;
+    font-size: 1.5rem !important;
+}
+
+.nav-target {
+    position: absolute;
+    top: -60px;
+}
+
+hr {
+    border-width: 2px !important;
+    background-color: $accent-color;
+}
+
+.carousel .carousel-control-next-icon,
+.carousel .carousel-control-prev-icon {
+    display: none;
+}
+
+.carousel-indicators {
+    display: none !important;
+}

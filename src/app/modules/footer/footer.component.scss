@@ -1,0 +1,15 @@
+@import "../../../variables.scss";
+
+mdb-icon {
+    padding: 20px;
+}
+
+mdb-icon:hover {
+    color: $accent-color;
+}
+
+@media only screen and (max-width: 1050px) {
+    #social-links-container {
+        display: block !important;
+    }
+}

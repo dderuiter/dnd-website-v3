@@ -1,0 +1,46 @@
+@import "../../../../variables.scss";
+
+h3 {
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+h4 {
+    color: #9eaace;
+    font-size: 1.2rem;
+}
+
+.project-caption {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    border: 2px solid $accent-color;
+    opacity: 0.9;
+    background-color: #161c27;   
+    width: 35%;
+}
+
+#project-caption-right {
+    right: 0;
+    transform: translate(-20%, -50%);
+}
+
+#project-caption-left {
+    left: 0;
+    transform: translate(20%, -50%);
+}
+
+@media only screen and (max-width: 992px) {
+    .project-caption {
+        width: 65%;
+    }
+
+    #project-caption-left,
+    #project-caption-right {
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        transform: translate(0%, -50%);
+    }
+}

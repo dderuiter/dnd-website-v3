@@ -1,0 +1,180 @@
+{
+    "languages": [
+        {
+            "name": "AutoIt",
+            "rating": 2
+        },
+        {
+            "name": "C++",
+            "rating": 3
+        },
+        {
+            "name": "C#",
+            "rating": 3
+        },
+        {
+            "name": "CSS",
+            "rating": 4
+        },
+        {
+            "name": "HTML",
+            "rating": 4
+        },
+        {
+            "name": "Groovy",
+            "rating": 3
+        },
+        {
+            "name": "Java",
+            "rating": 5
+        },
+        {
+            "name": "JavaScript",
+            "rating": 4
+        },
+        {
+            "name": "NativeScript",
+            "rating": 1
+        },
+        {
+            "name": "MATLAB",
+            "rating": 2
+        },
+        {
+            "name": "Prolog",
+            "rating": 1
+        },
+        {
+            "name": "Python",
+            "rating": 3
+        },
+        {
+            "name": "Scheme",
+            "rating": 1
+        },
+        {
+            "name": "SCSS",
+            "rating": 3
+        },
+        {
+            "name": "TypeScript",
+            "rating": 3
+        },
+        {
+            "name": "VBScript",
+            "rating": 2
+        }
+    ],
+    "frameworks": [
+        {
+            "name": "Angular",
+            "rating": 3
+        },
+        {
+            "name": "ASP.NET",
+            "rating": 3
+        },
+        {
+            "name": "Apache CXF",
+            "rating": 4
+        },
+        {
+            "name": "Bootstrap",
+            "rating": 4
+        },
+        {
+            "name": "Kendo UI",
+            "rating": 3
+        },
+        {
+            "name": "MDBootstrap",
+            "rating": 4
+        },
+        {
+            "name": "Spring",
+            "rating": 4
+        }
+    ],
+    "databases": [
+        {
+            "name": "Oracle (PL/SQL)",
+            "rating": 2
+        },
+        {
+            "name": "MongoDB (NoSQL)",
+            "rating": 3
+        },
+        {
+            "name": "MySQL (SQL)",
+            "rating": 3
+        }
+    ],
+    "libraries": [
+        {
+            "name": "JavaFX",
+            "rating": 2
+        },
+        {
+            "name": "jQuery",
+            "rating": 4
+        }
+    ],
+    "sourceControl": [
+        {
+            "name": "ClearCase",
+            "rating": 4
+        },
+        {
+            "name": "Git",
+            "rating": 5
+        },
+        {
+            "name": "Subversion",
+            "rating": 3
+        }
+    ],
+    "ides": [
+        {
+            "name": "Android Studio",
+            "rating": 3
+        },
+        {
+            "name": "Eclipse",
+            "rating": 4
+        },
+        {
+            "name": "IntelliJ IDEA",
+            "rating": 5
+        },
+        {
+            "name": "Netbeans",
+            "rating": 2
+        },
+        {
+            "name": "Visual Studio",
+            "rating": 3
+        },
+        {
+            "name": "Visual Studio Code",
+            "rating": 4
+        },
+        {
+            "name": "Webstorm",
+            "rating": 3
+        }
+    ],
+    "miscellaneous": [
+        {
+            "name": "JSON",
+            "rating": 4
+        },
+        {
+            "name": "Node.js",
+            "rating": 3
+        },
+        {
+            "name": "XML",
+            "rating": 4
+        }
+    ]
+}

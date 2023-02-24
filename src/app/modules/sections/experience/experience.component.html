@@ -1,0 +1,113 @@
+<div id="experience" class="container site-section">
+    <div id="experience-nav-target" class="nav-target"></div>
+    <h1 class="section-title">Experience</h1>
+    <h2 class="section-subtitle">"Some things cannot be taught; they must be experienced." - Roy T. Bennett</h2>
+    <hr class="mt-4 mb-4 d-inline-block mx-auto w-100">
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="text-center">
+                <div id="btn-group" class="btn-group-vertical" role="group">
+                    <button (click)="showTab(0)" [class.btn-time-line-active]="activeTabNum === 0" mdbBtn type="button" class="waves-light mt-0 mb-0 btn-timeline" mdbWavesEffect>Present</button>
+                    <button (click)="showTab(1)" [class.btn-time-line-active]="activeTabNum === 1" mdbBtn type="button" class="waves-light mt-0 mb-0 btn-timeline" mdbWavesEffect>2017 - 2022</button>
+                    <button (click)="showTab(2)" [class.btn-time-line-active]="activeTabNum === 2" mdbBtn type="button" class="waves-light mt-0 mb-0 btn-timeline" mdbWavesEffect>2016</button>
+                    <button (click)="showTab(3)" [class.btn-time-line-active]="activeTabNum === 3" mdbBtn type="button" class="waves-light mt-0 mb-0 btn-timeline" mdbWavesEffect>2015</button>
+                    <button (click)="showTab(4)" [class.btn-time-line-active]="activeTabNum === 4" mdbBtn type="button" class="waves-light mt-0 mb-0 btn-timeline" mdbWavesEffect>2014</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div *ngIf="activeTabNum === 0">
+                <h5>Software Engineer <span>@ Amazon</span></h5>
+                <h6 class="mb-4">Present</h6>
+                <ul class="ul-top-level">
+                    <li>SDE on the Amazon Fulfillment Technologies (AFT) Identity team.</li>
+                </ul>
+            </div>
+            <div *ngIf="activeTabNum === 1">
+                <h5>Software Engineer <span>@ L3Harris Technologies</span></h5>
+                <h6 class="mb-4">June 2017 - Feb 2022</h6>
+                <ul class="ul-top-level">
+                    <li>Function as the technical lead for an enterprise custom PLM software solution with <b>8,000+</b> active users.</li>
+                    <li>Implement bug fixes, improvements, and new features for a <b>500,000+</b> line codebase on a daily basis.</li>
+                    <ul>
+                        <li>This includes both front-end and back-end development.</li>
+                    </ul>
+                    <li>Balance supporting multiple teams/projects executing in parallel with <b>100%</b> of tasks completed on time and within budget.</li>
+                    <li>Developed RESTful API to phase out legacy SOAP web services using a combination of Apache CXF and Spring.</li>
+                    <ul>
+                        <li>Secured with the use of the Spring security framework, JSON Web Tokens (JWT), and Basic Authentication.</li>
+                        <li>Documented using the OpenAPI (Swagger) specification.</li>
+                    </ul>
+                    <li>Aided in updating developer tool stack.</li>
+                    <ul>
+                        <li>Source Control: ClearCase to Git</li>
+                        <li>Build Tool: Ant to Maven</li>
+                        <li>IDE: Eclipse to IntelliJ IDEA</li>
+                        <li>Dependency Management: ProGet to Artifactory</li>
+                    </ul>
+                    <li>Created DevOps pipelines in Jenkins for automating build deployments (written primarily in Groovy).</li>
+                    <li>Operated as a key player in transitioning team from Waterfall to the Scrum agile process framework.</li>
+                    <li>Led and/or actively participated in regular Sprint activities (i.e. daily standup, backlog refinement, spring review, etc.)</li>
+                    <li>Received the following awards/recognitions:</li>
+                    <ul>
+                        <li>URock for Excellence (x3)</li>
+                        <li>ThankU for Customer Support</li>
+                    </ul>
+                    <li>Received the following certifications:</li>
+                    <ul>
+                        <li>Certified Scrum Developer (CSD)</li>
+                        <li>Certified Scrum Master (CSM)</li>
+                    </ul>
+                    <li>Completed multiple e3 Just Do It projects in 2020 that save L3Harris an estimated <b>$137,520</b> annually exceeding goal by <b>817%</b>.</li>
+                    <li>Completed multiple e3 Just Do It projects in 2021 that save L3Harris an estimated <b>$65,600</b> annually exceeding goal by <b>119%</b>.</li>
+                </ul>
+            </div>
+            <div *ngIf="activeTabNum === 2">
+                <h5>Software Engineer (Intern) <span>@ L3Harris Technologies</span></h5>
+                <h6 class="mb-4">May - Aug 2016</h6>
+                <ul class="ul-top-level">
+                    <li>Developed code for both the font-end and back-end of a C# ASP.NET MVC interface status portal application.</li>
+                    <li>Collaborated with users and team daily to determine application update requirements.</li>
+                    <li>Coded unit tests to increase application maintainability.</li>
+                    <li>Participated in code reviews using Crucible to ensure high quality code.</li>
+                    <li>Wrote test requirements in JIRA for SE's to use for acceptance testing.</li>
+                    <li>Deployed code to development server using CruiseControl.NET and wrote documentation explaining the procedure for deploying to QA and production servers.</li>
+                </ul>
+            </div>
+            <div *ngIf="activeTabNum === 3">
+                <h5>Software Engineer (Intern) <span>@ L3Harris Technologies</span></h5>
+                <h6 class="mb-4">May - Aug 2015</h6>
+                <ul class="ul-top-level">
+                    <li>Developed code for both the front-end and back-end of a custom Java Agile PLM application.</li>
+                    <li>Coded unit tests to reduce regression testing costs.</li>
+                    <li>Conducted and assisted with code reviews to ensure top-notch code quality.</li>
+                    <li>Assessed needs of customer and designed a machine learning UX tool to aide in managing datasets and comparing the effectiveness of learning/analytic algorithms.</li>
+                </ul>
+            </div>
+            <div *ngIf="activeTabNum === 4">
+                <h5>Software Engineer (Intern) <span>@ L3Harris Technologies</span></h5>
+                <h6 class="mb-4">May - Aug 2014</h6>
+                <ul class="ul-top-level">
+                    <li>Implemented an AutoIt to QuickTest Pro library converter application which reduced time spent translating libraries by up to 90%.</li>
+                    <li>Implemented a test automation front-end which gave inexperienced users the ability to run tests and reports.</li>
+                    <li>Collaborated with test automation team members to develop an interactive top-level flow chart to speed up new hire training time and standardize procedures.</li>
+                    <li>Designed web portal UI for SpaceWire communication error monitoring and telemetry.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div *ngIf="activeTabNum === 0" class="d-flex flex-column badge-container">
+                <mdb-badge *ngFor="let tag of tags" pill="true" color="mdb-color darken-1" class="ml-auto wow fadeInUp">{{ tag }}</mdb-badge>
+            </div>
+            <div *ngIf="activeTabNum === 1" class="d-flex flex-column badge-container">
+                <mdb-badge *ngFor="let tag of tags" pill="true" color="mdb-color darken-1" class="ml-auto">{{ tag }}</mdb-badge>
+            </div>
+            <div *ngIf="activeTabNum === 2" class="d-flex flex-column badge-container">
+                <mdb-badge *ngFor="let tag of tags" pill="true" color="mdb-color darken-1" class="ml-auto">{{ tag }}</mdb-badge>
+            </div>
+            <div *ngIf="activeTabNum === 3" class="d-flex flex-column badge-container">
+                <mdb-badge *ngFor="let tag of tags" pill="true" color="mdb-color darken-1" class="ml-auto">{{ tag }}</mdb-badge>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+@import "../../../variables.scss";
+
+#home-link-container {
+    width: 40px;
+    position: fixed;
+    bottom: 0;
+    right: 40px;
+    left: auto;
+    z-index: 10;
+
+    .vertical-panel-line {
+        height: 100px;
+        width: 1px;
+        background: rgb(168, 178, 209);
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    div {
+        text-align: center;
+    
+        a {
+            text-align: center;
+            writing-mode: vertical-rl;
+            letter-spacing: 2px;
+            color: rgb(168, 178, 209);
+        }
+    
+        a:hover {
+            color: $accent-color;
+        }
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    #home-link-container {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1270px) {
+    #home-link-container {
+        right: 15px;
+    }
+}

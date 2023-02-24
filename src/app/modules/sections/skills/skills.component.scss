@@ -1,0 +1,66 @@
+@import "../../../../variables.scss";
+
+h4 {
+    font-weight: 500;
+    padding-bottom: 2px;
+    border-bottom: 2px solid $accent-color;
+    width: fit-content;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+li {
+    height: auto;
+    padding: 4px;
+}
+
+li:hover {
+    background: $background-hover-color;
+}
+
+li {
+    .skill-rating {
+        float: right;
+    }
+}
+
+.skill-star {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    padding: 3px;
+}
+
+.star-empty {
+    color: #56678a;
+}
+
+.star-filled {
+    color: $accent-color;
+}
+
+li:hover .skill-star {
+    margin-left: 4px;
+}
+
+// li .skill-score .glyphicon.filled
+// {
+// 	color: #C74343;
+// }
+
+// li .skill-score .glyphicon
+// {
+// 	color: #C0C0C0;
+// }
+
+// li:hover .skill-score .glyphicon
+// {
+// 	margin-left: 4px;
+// }

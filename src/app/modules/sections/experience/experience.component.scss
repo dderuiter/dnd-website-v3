@@ -1,0 +1,148 @@
+@import "../../../../variables.scss";
+
+h5 {
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+
+    span {
+        color: $accent-color;
+    }
+}
+
+h6 {
+    color: rgb(136, 146, 176);
+    font-weight: 500;
+}
+
+.ul-top-level > li,
+.ul-top-level > ul {
+    margin-bottom: 8px;
+}
+
+mdb-badge {
+    font-size: 0.8rem;
+    padding: 8px 12px;
+    margin: 5px;
+    border: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+mdb-badge:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    color: black !important;
+    background-color: $accent-color !important;
+}
+
+ul {
+    list-style: none;
+}
+
+.ul-top-level {
+    padding-left: 20px;
+}
+
+ul li::before {
+    content: "▹";
+    color: $accent-color;
+    font-weight: bold;
+    display: inline-block;
+    width: 1.2em;
+    margin-left: -1.2em;
+}
+
+.btn-timeline {
+    border-left: 2px solid rgba(255, 255, 255, 0.158);
+    background-color: $background-color-alt !important;
+    box-shadow: none;
+    text-align: left;
+    color: white;
+    white-space: nowrap;
+}
+
+.btn-timeline:hover {
+    // border-left: 2px solid rgba(255, 255, 255, 0.158);
+    background-color: $background-hover-color !important;
+    box-shadow: none;
+    color: white;
+}
+
+.btn-timeline:focus,
+.btn-timeline:active,
+.btn-time-line-active {
+    border-left: 2px solid $accent-color;
+    background-color: $background-color-alt !important;
+    box-shadow: none;
+    color: $accent-color;
+}
+
+@media only screen and (max-width: 992px) {
+    #btn-group {
+        flex-direction: row !important;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .btn-timeline {
+        border-left: none;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.158);
+    }
+
+    .btn-timeline:hover {
+        border-left: none;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.158);
+    }
+
+    .btn-timeline:focus,
+    .btn-timeline:active,
+    .btn-time-line-active {
+        border-left: none;
+        border-bottom: 2px solid $accent-color;
+    }
+
+    #tech-stack-title {
+        text-align: left !important;
+    }
+
+    .badge-container {
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+
+        mdb-badge {
+            margin-left: unset !important;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .btn-timeline {
+        padding: 10px 10px;
+    }
+}
+
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}

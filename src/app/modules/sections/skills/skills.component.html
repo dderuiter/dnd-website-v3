@@ -1,0 +1,82 @@
+<div id="skills" class="container site-section">
+    <div id="skills-nav-target" class="nav-target"></div>
+    <h1 class="section-title">Skills</h1>
+    <h2 class="section-subtitle">"Skill is only developed by hours and hours of work." - Usain Bolt</h2>
+    <hr class="mt-4 mb-4 d-inline-block mx-auto w-100">
+    <div class="row">
+        <div class="col-lg-6 pl-5 pr-5">
+            <h4>Languages</h4>
+            <ul>
+                <li *ngFor="let skill of languages">
+                    <span class="skill-name">{{ skill.name }}</span>
+                    <span class="skill-rating">
+                        <mdb-icon *ngFor="let i of [].constructor(skill.rating)" fas icon="star" class="skill-star star-filled"></mdb-icon>
+                        <mdb-icon *ngFor="let i of [].constructor(5 - skill.rating)" fas icon="star" class="skill-star star-empty"></mdb-icon>
+                    </span>
+                </li>
+            </ul>
+            <h4>Databases</h4>
+            <ul>
+                <li *ngFor="let skill of databases">
+                    <span class="skill-name">{{ skill.name }}</span>
+                    <span class="skill-rating">
+                        <mdb-icon *ngFor="let i of [].constructor(skill.rating)" fas icon="star" class="skill-star star-filled"></mdb-icon>
+                        <mdb-icon *ngFor="let i of [].constructor(5 - skill.rating)" fas icon="star" class="skill-star star-empty"></mdb-icon>
+                    </span>
+                </li>
+            </ul>
+            <h4>Source Control</h4>
+            <ul>
+                <li *ngFor="let skill of sourceControl">
+                    <span class="skill-name">{{ skill.name }}</span>
+                    <span class="skill-rating">
+                        <mdb-icon *ngFor="let i of [].constructor(skill.rating)" fas icon="star" class="skill-star star-filled"></mdb-icon>
+                        <mdb-icon *ngFor="let i of [].constructor(5 - skill.rating)" fas icon="star" class="skill-star star-empty"></mdb-icon>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-6 pl-5 pr-5">
+            <h4>Frameworks</h4>
+            <ul>
+                <li *ngFor="let skill of frameworks">
+                    <span class="skill-name">{{ skill.name }}</span>
+                    <span class="skill-rating">
+                        <mdb-icon *ngFor="let i of [].constructor(skill.rating)" fas icon="star" class="skill-star star-filled"></mdb-icon>
+                        <mdb-icon *ngFor="let i of [].constructor(5 - skill.rating)" fas icon="star" class="skill-star star-empty"></mdb-icon>
+                    </span>
+                </li>
+            </ul>
+            <h4>Libraries</h4>
+            <ul>
+                <li *ngFor="let skill of libraries">
+                    <span class="skill-name">{{ skill.name }}</span>
+                    <span class="skill-rating">
+                        <mdb-icon *ngFor="let i of [].constructor(skill.rating)" fas icon="star" class="skill-star star-filled"></mdb-icon>
+                        <mdb-icon *ngFor="let i of [].constructor(5 - skill.rating)" fas icon="star" class="skill-star star-empty"></mdb-icon>
+                    </span>
+                </li>
+            </ul>
+            <h4>IDEs</h4>
+            <ul>
+                <li *ngFor="let skill of ides">
+                    <span class="skill-name">{{ skill.name }}</span>
+                    <span class="skill-rating">
+                        <mdb-icon *ngFor="let i of [].constructor(skill.rating)" fas icon="star" class="skill-star star-filled"></mdb-icon>
+                        <mdb-icon *ngFor="let i of [].constructor(5 - skill.rating)" fas icon="star" class="skill-star star-empty"></mdb-icon>
+                    </span>
+                </li>
+            </ul>
+            <h4>Miscellaneous</h4>
+            <ul>
+                <li *ngFor="let skill of miscellaneous">
+                    <span class="skill-name">{{ skill.name }}</span>
+                    <span class="skill-rating">
+                        <mdb-icon *ngFor="let i of [].constructor(skill.rating)" fas icon="star" class="skill-star star-filled"></mdb-icon>
+                        <mdb-icon *ngFor="let i of [].constructor(5 - skill.rating)" fas icon="star" class="skill-star star-empty"></mdb-icon>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
